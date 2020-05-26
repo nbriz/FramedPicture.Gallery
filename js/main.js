@@ -56,10 +56,16 @@ function turnTo (direction) {
   frames[side].material.opacity = 1
 
   const author = document.querySelector('#author')
+  const left = document.querySelector('img[src="images/left-arrow.svg"]')
+  const right = document.querySelector('img[src="images/right-arrow.svg"]')
   author.style.opacity = 0
+  left.style.opacity = 0
+  right.style.opacity = 0
   setTimeout(() => {
     author.textContent = `by ${emoji}`
     author.style.opacity = 1
+    left.style.opacity = 1
+    right.style.opacity = 1
   }, 3000)
 
   const rots = [

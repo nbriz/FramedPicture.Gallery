@@ -40,6 +40,8 @@ nav b {
 nav img {
   width: 5vw;
   cursor: pointer;
+  opacity: 1;
+  transition: all 1s;
 }
 
 nav > div {
