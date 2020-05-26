@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'roboto-mid';
+  src: url('roboto/Roboto-Medium.ttf');
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0;
+  overflow-x: hidden;
+}
+
+
+nav {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  font-family: 'roboto-thin', sans-serif;
+  font-size: 3vw;
+  transition: all 1s;
+}
+
+@media (orientation: portrait) {
+  nav {
+    font-size: 3vh;
+  }
+}
+
+nav b {
+  font-family: 'roboto-thin', sans-serif;
+  cursor: pointer;
+}
+
+nav img {
+  width: 5vw;
+  cursor: pointer;
+}
+
+nav > div {
+  text-align: center;
+  font-size: 5vh;
+}
+
+nav > div:nth-child(1) {
+  position: fixed;
+  left: 0px;
+  top: 10vh;
+  width: 100vw;
+  padding: 0;
+}
+
+nav > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5vw;
+}
+
+nav > div:nth-child(3) {
+  position: fixed;
+  left: 0px;
+  bottom: 10vh;
+  width: 100vw;
+  padding: 0;
+}
+
+#author {
+  opacity: 1;
+  transition: all 1s;
+}
+
+/* •.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.•^•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.• */
+
+main {
+  font-family: 'roboto-thin', sans-serif;
+  font-weight: 100;
+  position: absolute;
+  z-index: 10;
+  min-height: 100vh;
+  width: 100vw;
+  transition: all 1s;
+}
+
+main > section {
+  padding: 2vw 12vw;
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'roboto-mid', sans-serif;
+  font-weight: 500;
+  font-size: 8vw;
+  margin: 0;
+}
+
+b {
+  font-family: 'roboto-mid', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+#enter-gallery {
+  text-align: center;
+  cursor: pointer;
+  font-size: 52px;
+  padding: 50px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+article > div:nth-child(1) {
+  border-right: 1px solid #000;
+  padding-right: 50px;
+}
+
+article > div:nth-child(2) {
+  padding-left: 50px;
+}
+
+@media (max-width: 1400px) {
+  p {
+    font-size: 19px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  article { display: block; }
+  article > div:nth-child(1) {
+    border-right: none;
+    padding-right: 0;
+  }
+  article > div:nth-child(2) {
+    padding-left: 0;
+  }
+  #enter-gallery {
+    font-size: 31px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
