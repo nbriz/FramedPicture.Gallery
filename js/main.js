@@ -38,12 +38,17 @@ function turnTo (direction) {
              ---
   */
   const prev = side
+  const sideOrder = [ 0, 3, 4, 5, 0, 3, 5, 4, 3, 0, 5 ]
   if (direction === 'next') {
     index = (index === platforms.length - 1) ? 0 : index + 1
-    side = (side === 5) ? 0 : side + 1
+    // side = (side === 5) ? 0 : side + 1
+    // side = (side === 0) ? 3 : 0
+    side = sideOrder[index]
   } else if (direction === 'prev') {
     index = (index === 0) ? platforms.length - 1 : index - 1
-    side = (side === 5) ? 0 : side - 1
+    // side = (side === 5) ? 0 : side - 1
+    // side = (side === 0) ? 3 : 0
+    side = sideOrder[index]
   }
 
   const emoji = platforms[index]
