@@ -24,6 +24,8 @@ document.querySelector('img[src="images/left-arrow.svg"]')
   .addEventListener('click', () => { turnTo('prev') })
 document.querySelector('img[src="images/right-arrow.svg"]')
   .addEventListener('click', () => { turnTo('next') })
+document.querySelector('#between-arrows')
+  .addEventListener('click', () => { turnTo('next') })
 document.querySelector('nav > div:nth-child(1) > b')
   .addEventListener('click', leaveGallery)
 

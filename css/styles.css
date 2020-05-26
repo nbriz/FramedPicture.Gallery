@@ -76,6 +76,11 @@ nav > div:nth-child(3) {
   padding: 0;
 }
 
+#between-arrows {
+  width: 50vw;
+  height: 50vh;
+}
+
 #author {
   opacity: 1;
   transition: all 1s;
