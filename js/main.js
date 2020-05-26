@@ -190,7 +190,7 @@ function setup () {
   renderer.setClearColor(0xfffff, 0)
   renderer.setSize(window.innerWidth, window.innerHeight)
   renderer.setPixelRatio(window.devicePixelRatio)
-  renderer.domElement.style.position = 'absolute'
+  renderer.domElement.style.position = 'fixed'
   renderer.domElement.style.left = '0px'
   renderer.domElement.style.top = '0px'
   renderer.domElement.style.zIndex = '0'

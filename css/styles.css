@@ -64,6 +64,7 @@ nav > div:nth-child(2) {
   width: 100vw;
   height: 100vh;
   padding: 0 5vw;
+  position: fixed;
 }
 
 nav > div:nth-child(3) {
